@@ -1,0 +1,16 @@
+version: "3.9"
+
+services:
+  orchestrator:
+    build: ./orchestrator
+    ports:
+      - "8000:8000"
+
+  kiln:
+    build: ./kiln
+
+  raw:
+    build: ./raw
+
+  finish:
+    build: ./finish
